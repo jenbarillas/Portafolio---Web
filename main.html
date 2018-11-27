@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<title>Portafolio</title>
+<!DOCTYPE html>
+<html>
+<title>Portafolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Remove margins from "page content" on small screens */
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif
+}
+.row-padding img {
+    margin-bottom: 12px
+}
+/* Set the width of the sidebar to 120px */
+.sidebar {
+    width: 120px;
+    background: #222;
+}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px
+}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {margin-left: 0}
+}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="./img/fondo.jpg" style="width:100%">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>Projects</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container padding-32 center black" id="home">
+    <h1 class="jumbo"><span class="hide-small">JM</span>-BB</h1>
+    <p>Futura ingeniera.</p>
+    <img src="./img/fondo.jpg" class="image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">Jennifer Barillas</h2>
+    <hr style="width:200px" class="opacity">
+    <p>
+      Edad: 19 años
+      Estudios: 4to año de la licenciatura en Ingenieria en ciencias de la computacion y tecnologias de la informacion.
+      Centro de estudio: Universidad del Valle de Guatemala
+      Pasatiempos: Natación, violin, pintura y dibujo.
+      Descripcion: Me encanta el arte, me considero una persona bastante creativa, de mente abierta. Creo en el poder de la ciencia, y veo 
+      la teconologia como prueba de una fusion entre ella con el arte, ya que nos da la esperanza de crear algo innovador sabiendo
+      que puede estar al alcance de nuestras manos, lo que llamaría "soñar con los ojos abiertos".
+    </p>
+    <h3 class="padding-16 text-light-grey">Descripción</h3>
+    <p class="wide">Creatividad</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="wide">Conocimiento</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <p class="wide">Habilidades sociales</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+  
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="padding-64 content" id="photos">
+    <h2 class="text-light-grey">Proyectos</h2>
+    <hr style="width:200px" class="opacity">
+
+    <!-- Grid for photos -->
+    <div class="row-padding" style="margin:0 -16px">
+      <div class="half">
+        <p class = "hp"><a href="http://34.210.35.174/Jenny-15307/calculator/code/index.html"><img src="./img/hp.jpg" width="450" height="250"></i></a></p>
+        <p class = "narnia"><a href="http://34.210.35.174/Jenny-15307/lab4/index.html"><img src="./img/narnia.jpg" width="450" height="250"></i></a></p>
+        <p class = "narnia"><a href="http://34.210.35.174/Jenny-15307/maze-runner/index.html"><img src="./img/got.jpg" width="450" height="250"></a></p>
+        <p class = "fz"><a href="http://34.210.35.174/Jenny-15307/lab2-story/index.html"><img src="./img/fz.jpg" width="450" height="250"></i></a></p>
+      </div>
+
+    <!-- End project grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Guatemala, Guatemala</p>
+      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: +502 #### ####</p>
+      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: bar15307@uvg.edu.gt</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="mailto:bar15307@uvg.edu.gt" method="post" enctype="text/plain">
+      <p><input class="input padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="input padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="input padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="input padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="button light-grey padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="content padding-64 text-grey xlarge">
+    <p class = "facebook"><a href="https://www.facebook.com/profile.php?id=100010150209297"><i class="fa fa-facebook-official hover-opacity"></i></a></p>
+    <p class = "instagram"><a href="https://www.instagram.com/jenbarillas/?hl=es-la"><i class="fa fa-instagram hover-opacity"></i></a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
